@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@font-face {
+    font-family: 'Muli';
+    src: url('fonts/Muli-ExtraLight.ttf');
+    }
+
+/* font-family: 'Catamaran', Helvetica, Arial, sans-serif; */
+/* font-family: 'Lato', Helvetica, Arial, sans-serif; */
+/* font-family: 'Muli', Helvetica, Arial, sans-serif; */
+html {
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Catamaran', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+
+.cus--nav, .cus--btn {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+p, small, span, footer {
+    font-family: 'Muli', Helvetica, Arial, sans-serif;
+}
+
+.container {
+max-width: 1000px;
+}
+
+header {
+    background-image: url(./img/bg-pattern.png), linear-gradient(to right, rgb(226,55,67), rgb(173,51,98), rgb(142,32,175));
+    background-repeat: repeat;
+    padding-top: 65px;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 100;
+    color: #fdcc52;
+}
+
+.cus--nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cus--nav-white {
+    background-color: white;
+}
+
+.cus--navlink {
+    color:#fdcc52;
+}
+
+.cus--navlink:hover, .navbar-brand:hover {
+    color: white;
+}
+
+.cus--btn {
+    padding:  0.7rem 2.5rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    background-color: transparent;
+    font-size: 0.7rem;
+    transition: all 0.3s;
+}
+
+.cus--btn:hover {
+    background-color: #fdcc52;
+    border: 1px solid #fdcc52;
+}
+
+.cus--mobil {
+    height: 75vh;
+}
+.cus--mobil-img1 {
+    height: 100%;
+    position: relative;
+}
+
+.cus--mobil-img2 {
+    position: absolute;
+    top: 8vh;
+    height: 79%;
+}
+
+#cus--discover {
+    height: 60vh;
+    background-color: #fdcc52;
+}
+
+#cus--friends {
+    height: 35vh;
+    background-color: #fdcc52;
+}
+
+.cus--discover-h1 {
+    width: 30rem;
+    font-size: 3.5rem;
+}
+.cus--icon-left {
+    font-size: 3.5rem;
+    border-right: 1px solid  rgb(184,47,87);
+}
+.cus--icon-right {
+    font-size: 3.5rem;
+    border-left: 1px solid rgb(184,47,87);
+    color: rgb(184,47,87);
+}
+.cus--unlimited-br {
+    width: 5rem;
+    background-color:rgba(0, 0, 0, 0.05);
+    height: 1px;
+    border: none;
+    text-align: center;
+}
+
+.cus--cta {
+    height: 38rem;
+    background-image: url('./img/bg-cta.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.8;
+}
+.cus--cta-h1 {
+    font-size: 4.5rem;
+}
+
+.dot {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+}
+.dot:hover {
+    text-decoration: none;
+    opacity: 1;
+    color: white
+}
+
+.twitter-blue {
+    background-color: rgb(29,161,242);
+}
+.facebook-blue {
+    background-color: rgb(59,89,152);
+}
+.google-red {
+    background-color: rgb(211,72,54);
+}
+
+footer {
+    font-size: 0.8rem;
+}
+footer p {
+    margin-bottom: 0.3rem;
+}
+footer a {
+    color: #6c757d;
+}
+
+footer a:hover {
+    color: #fdcc52;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 450px;
+    }
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .cus--nav-h1 {
+        font-size: 1.5rem;
+    }
+
+    .cus--discover-h1 {
+        width: 25rem;
+        font-size: 2.5rem;
+    }
+
+    .cus--icon-right {
+        border-left: 0;
+        border-right: 1px solid red;
+    }
+    .cus--cta-h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  .custom-toggler.navbar-toggler {
+    border-color: lightgray;
+    font-size: 1rem;
+  } 
