@@ -11,3 +11,7 @@ document.addEventListener('scroll', () => {
 
     navlinks.forEach(item => item.style.color = 'grey');
 })
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 300
+});
